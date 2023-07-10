@@ -1,61 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Awesome Books</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
 
     <header>
-        <p>Awesome Books</p>
-        <nav>
-          <ul>
-            <li id="list">List</li>
-            <li id="newBook">Add new</li>
-            <li id="contact-link">Contact</li>
-          </ul>
-        </nav>
-      </header>
-  
-      <section class="date">
-        <p id="time"></p>
+      <p>Awesome Books</p>
+      <nav>
+        <ul>
+          <li id="list">List</li>
+          <li id="new-book">Add new</li>
+          <li id="contact-link">Contact</li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="date">
+      <p id="time"></p>
+    </section>
+
+    <main>
+      <h1 id="book-title">All awesome books</h1>
+
+      <table id="tableBook">
+        <tbody id="all-book"></tbody>
+      </table>
+
+      <form id="book-form" class="add-book">
+        <h3>Add a new book</h3>
+        <input id="title" type="text" placeholder="Title" required /><br />
+        <input id="author" type="text" placeholder="Author" required /><br />
+        <button id="add-book">Add</button>
+      </form>
+
+      <section id="contact">
+        <h3>Contact information</h3>
+        <p>Do you have any questions or you want to say "Hello"? <br>
+          You can reach out to us!
+        </p>
+        <ul>
+          <li>Our-email: mail@gmail.com</li>
+          <li>Our phone number: 0080751246721</li>
+          <li>Our adress: Area 51, 8950 City, Jupiter</li>
+        </ul>
       </section>
-  
-      <main>
-        <h1 id="book-title">All awesome books</h1>
-  
-        <table id="tableBook">
-          <tbody id="allBooks"></tbody>
-        </table>
-  
-        <form id="book-form" class="addBook">
-          <h3>Add a new book</h3>
-          <input id="title" type="text" placeholder="Title" required /><br />
-          <input id="author" type="text" placeholder="Author" required /><br />
-          <button id="addBook">Add</button>
-        </form>
-  
-        <section id="contact">
-          <h3>Contact information</h3>
-          <p>Do you have any questions or you want to say "Hello"? <br>
-            You can reach out to us!
-          </p>
-          <ul>
-            <li>Our-email: mail@gmail.com</li>
-            <li>Our phone number: 0080751246721</li>
-            <li>Our adress: Area 51, 8950 City, Jupiter</li>
-          </ul>
-        </section>
-  
-      </main>
-  
-      <footer>
-        <p>Copyright  ...</p>
-      </footer>
-  
-      <script src="index.js"></script>
-    
-</body>
+
+    </main>
+
+    <footer>
+      <p>Copyright  ...</p>
+    </footer>
+
+
+    <script type="module" src="index.js"></script>
+    <script type="module" src="modules/variable.js"></script>
+    <script type="module" src="modules/bookClass.js"></script>
+    <script type="module" src="modules/clock.js" ></script>
+
+  </body>
 </html>
