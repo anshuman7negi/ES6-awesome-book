@@ -1,7 +1,8 @@
 import Allbook from './modules/bookClass.js';
 import {
-  booktitle, bookform, contact, tableBook, title, author, contactLink, list, newbook, time,
+  booktitle, bookform, contact, tableBook, title, author, contactLink, list, newbook,
 } from './modules/variable.js';
+import displayClock from './modules/clock.js';
 import { DateTime } from './node_modules/luxon/src/luxon.js';
 
 const mybooks = new Allbook();
@@ -35,9 +36,4 @@ contactLink.addEventListener('click', () => {
   booktitle.style.display = 'none';
 });
 
-function displayClock() {
-  const timeNow = DateTime.now().toFormat('yyyy-MM-dd HH:mm:ss');
-  time.innerHTML = timeNow;
-}
-
-setInterval(displayClock, 1000);
+displayClock(DateTime);
