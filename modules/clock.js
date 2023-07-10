@@ -1,4 +1,4 @@
-import { DateTime } from './luxon.js';
+import { DateTime } from '../node_modules/luxon/src/luxon.js';
 import { time } from './variable.js';
 
 export default function displayClock() {
