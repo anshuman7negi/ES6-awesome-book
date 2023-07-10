@@ -3,7 +3,6 @@ import {
   booktitle, bookform, contact, tableBook, title, author, contactLink, list, newbook,
 } from './modules/variable.js';
 import displayClock from './modules/clock.js';
-import { DateTime } from './node_modules/luxon/build/es6/luxon.js';
 
 const mybooks = new Allbook();
 
@@ -36,4 +35,4 @@ contactLink.addEventListener('click', () => {
   booktitle.style.display = 'none';
 });
 
-displayClock(DateTime);
+displayClock();
