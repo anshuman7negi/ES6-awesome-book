@@ -1,5 +1,5 @@
 import { time } from './variable.js';
-import { DateTime } from '../node_modules/luxon/build/es6/luxon.js';
+import { DateTime } from '../node_modules/luxon/src/luxon.js'; // eslint-disable-next-line import/no-unresolved
 
 export default function displayClock() {
   setInterval(() => {
