@@ -1,10 +1,10 @@
-import allbook from './modules/bookClass.js';
+import Allbook from './modules/bookClass.js';
 import {
   booktitle, bookform, contact, tableBook, title, author, contactLink, list, newbook,
 } from './modules/variable.js';
 import displayClock from './modules/clock.js';
 
-const mybooks = new allbook();
+const mybooks = new Allbook();
 
 document.getElementById('add-book').addEventListener('click', () => {
   if (title.value !== '' && author.value !== '') {

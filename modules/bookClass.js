@@ -1,6 +1,6 @@
 import { bookStore, booktitle, tableBook } from './variable.js';
 
-export default class allbook {
+export default class Allbook {
   constructor() {
     const previousData = localStorage.getItem('booksData');
     this.bookDetails = previousData ? JSON.parse(previousData) : [];
