@@ -3,7 +3,7 @@ import {
   booktitle, bookform, contact, tableBook, title, author, contactLink, list, newbook,
 } from './modules/variable.js';
 import displayClock from './modules/clock.js';
-import { DateTime } from './node_modules/luxon/src/luxon.js'; /* eslint-disable */
+import { DateTime } from '../node_modules/luxon/build/es6/luxon.js';
 
 const mybooks = new Allbook();
 
