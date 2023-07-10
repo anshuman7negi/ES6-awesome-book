@@ -1,5 +1,4 @@
 import { time } from './variable.js';
-// eslint-disable-next-line import/no-unresolved
 import { DateTime } from './luxon.js';
 
 const displayClock = () => {
