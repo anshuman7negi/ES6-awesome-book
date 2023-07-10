@@ -32,7 +32,7 @@ contactLink.addEventListener('click', () => {
   contact.style.display = 'flex';
   bookform.style.display = 'none';
   tableBook.style.display = 'none';
-  booktitle.style.display = 'none'; 
+  booktitle.style.display = 'none';
 });
 
 displayClock();
