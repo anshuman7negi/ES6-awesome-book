@@ -33,6 +33,7 @@ contactLink.addEventListener('click', () => {
   bookform.style.display = 'none';
   tableBook.style.display = 'none';
   booktitle.style.display = 'none';
+  
 });
 
 displayClock();
