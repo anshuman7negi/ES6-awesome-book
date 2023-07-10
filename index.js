@@ -4,11 +4,11 @@ import {
 } from './modules/variable.js';
 import displayClock from './modules/clock.js';
 
-const mybooks = new all-book();
+const mybooks = new allbook();
 
 document.getElementById('add-book').addEventListener('click', () => {
   if (title.value !== '' && author.value !== '') {
-    mybooks.add-book(title.value, author.value);
+    mybooks.addbook(title.value, author.value);
     title.value = '';
     author.value = '';
   }

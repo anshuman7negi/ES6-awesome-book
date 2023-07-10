@@ -42,11 +42,11 @@ nav ul {
   position: relative;
 }
 
-#newBook {
+#new-book {
   position: relative;
 }
 
-#newBook::after {
+#new-book::after {
   content: '';
   position: absolute;
   transform: rotate(90deg);
@@ -89,7 +89,7 @@ h3 {
   width: max-content;
 }
 
-#allBooks {
+#all-book {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -107,7 +107,7 @@ button {
   align-self: flex-end;
   border: 4px solid #111;
   background-color: #fff;
-  box-shadow: 4px 3px 1px 0 rgb(23, 22, 22);
+  box-shadow: 4px 3px 1px 0 rgb(23 22 22);
   font-size: 15px;
   font-weight: 700;
 }
@@ -116,15 +116,15 @@ button:hover {
   box-shadow: 4px 3px 1px 0 red;
 }
 
-#addBook {
+#add-book {
   width: 30%;
 }
 
-#addBook:hover {
-  box-shadow: 4px 3px 1px 0 rgb(53, 222, 37);
+#add-book:hover {
+  box-shadow: 4px 3px 1px 0 rgb(53 222 37);
 }
 
-.addBook {
+.add-book {
   display: flex;
   flex-direction: column;
   padding-top: 20px;
@@ -169,7 +169,7 @@ tbody tr:nth-child(odd) {
 }
 
 @media screen and (width < 409px) {
-  #newBook::after {
+  #new-book::after {
     content: '';
     position: absolute;
     transform: rotate(90deg);
@@ -181,7 +181,7 @@ tbody tr:nth-child(odd) {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (width >= 768px) {
   header {
     display: flex;
     align-items: center;
