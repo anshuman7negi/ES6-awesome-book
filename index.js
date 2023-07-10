@@ -4,7 +4,6 @@ import {
 } from './modules/variable.js';
 import displayClock from './modules/clock.js';
 
-
 const mybooks = new Allbook();
 
 document.getElementById('add-book').addEventListener('click', () => {
@@ -35,6 +34,5 @@ contactLink.addEventListener('click', () => {
   tableBook.style.display = 'none';
   booktitle.style.display = 'none';
 });
-
 
 setInterval(displayClock, 1000);
